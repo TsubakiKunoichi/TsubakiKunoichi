@@ -1,3 +1,5 @@
+# Quelle: https://www.youtube.com/watch?v=lGLto9Xd7bU
+
 _inputs = [1,2,3,2.5]
 
 _weights1 = [0.2,0.8,-0.5,1.0]
