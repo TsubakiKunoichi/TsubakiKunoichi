@@ -1,8 +1,5 @@
 # Quelle: https://www.youtube.com/watch?v=lGLto9Xd7bU
 
-from subprocess import getoutput
-
-
 _inputs = [1, 2, 3, 2.5]
 _weights = [[0.2, 0.8, -0.5, 1.0],
              [0.5, -0.91, 0.26, -0.5],
