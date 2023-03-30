@@ -46,12 +46,14 @@ def anz_displays(xdpc):
     print("Eine Signed pro Case :", len(eineSigned) / numTests)
     print("Zwei Signed pro Case :", len(zweiSigned) / numTests)
     print("Drei Signed pro Case :", len(dreiSigned) / numTests)
-    alleSigned = []
-    alleSigned.extend(keineSigned)
+    alleSigned = keineSigned;
     alleSigned.extend(eineSigned)
+    alleSigned.extend(zweiSigned)
+    alleSigned.extend(dreiSigned)
     print("Test. Summe von 'Keine, Eine, Zwei, Drei' muss eins sein: ", len(alleSigned) / numTests);
     
     print("Mehr als eine Signed pro Case :", len(mehrAlsEine) / numTests)
 
-#for i in range(10):
-anz_displays(5);
+for i in range(10):
+    print(f"-----Chancen für {i} Displays--------------------------------------------")
+    anz_displays(i);
