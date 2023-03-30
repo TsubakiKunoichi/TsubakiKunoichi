@@ -1,11 +1,12 @@
-# Werte die übergeben werden
-_inputs = [1.2,5.1,2.1]
+_inputs = [1,2,3,2.5]
 
-# Gewichtung der einzelnen Werte (wird durch training geändert)
-_weights = [3.1,2.1,8.7]
+_weights1 = [0.2,0.8,-0.5,1.0]
+_weights2 = [0.5,-0.91,0.26,-0.5]
+_weights3 = [-0.26,-0.27,0.17,0.87]
 
-# Wert bis zu welchem das Neuron einen Input ignoriert 
-_bias = 3
+_bias1 = 2
+_bias2 = 3
+_bias3 = 0.5
 
 def getOutput(input, weight, bias):
     output = 0
@@ -14,4 +15,6 @@ def getOutput(input, weight, bias):
     output += bias
     return output
 
-print(getOutput(_inputs,_weights,_bias))
+print(getOutput(_inputs,_weights1,_bias1))
+print(getOutput(_inputs,_weights2,_bias2))
+print(getOutput(_inputs,_weights3,_bias3))
