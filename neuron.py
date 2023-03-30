@@ -20,3 +20,5 @@ def getOutput(input, weight, bias):
 print(getOutput(_inputs,_weights1,_bias1))
 print(getOutput(_inputs,_weights2,_bias2))
 print(getOutput(_inputs,_weights3,_bias3))
+
+print(pow(4,2.3), 4**2.3, pow(4,2)*pow(4,0.3))
