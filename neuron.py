@@ -1,9 +1,4 @@
-
 # Werte die übergeben werden
-from doctest import OutputChecker
-import getopt
-
-
 _inputs = [1.2,5.1,2.1]
 
 # Gewichtung der einzelnen Werte (wird durch training geändert)
