@@ -65,9 +65,9 @@ class character:
 		return self.anzahl
 	def print_stats(self):
 		if self.wkeit > 0:
-			print("Name = ", self.name, "\nSterne = ", self.star, "\nAnzahl = ", self.anzahl, "\nPull-Chance = ", self.wkeit)
+			print("Name = ", self.name, "\n\tSterne = ", self.star, "\n\tAnzahl = ", self.anzahl, "\n\tPull-Chance = ", self.wkeit)
 		else:
-			print("Name = ", self.name, "\nSterne = ", self.star, "\nAnzahl = ", self.anzahl, "\nPull-Chance = na")
+			print("Name = ", self.name, "\n\tSterne = ", self.star, "\n\tAnzahl = ", self.anzahl, "\n\tPull-Chance = na")
 
 
 # class for pulling characters
@@ -178,7 +178,7 @@ class event:
 		for character in self.dict_chars.values():
 			character.print_stats()
 			total_anz += character.get_anzahl()
-			print("Anteil an Ziehungen = ", character.get_anzahl() / self.pull_anz)
+			print("\tAnteil an Ziehungen = ", character.get_anzahl() / self.pull_anz)
 		print("Gesamtanzahl registrierter Ziehungen = ", total_anz)
 
 	def print_pull_intervals(self):
