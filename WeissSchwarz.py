@@ -77,7 +77,15 @@ for [ps, xd, m1s, m2s, m3s] in list_signed_info:
         print(xd, " displays pro Case get you at least ", m1s, "signed. Hence a quota of ", m1s/xd, " at least one signed per display.")
 print("The quota could be interpreted as score and the highest score yields the most efficient signed per case, factoring in displays.")
 
+
 print("Comprehensive Score-Output:")
+min1str = " Anzahl displays, Wkeit min. 1, Score als Wkeit/Display \n"
+min2str = " Anzahl displays, Wkeit min. 2, Score als Wkeit/Display \n"
+min3str = " Anzahl displays, Wkeit min. 3, Score als Wkeit/Display \n"
 for [ps, xd, m1s, m2s, m3s] in list_signed_info:
     if xd > 0:
-        print(xd, " displays, min. 1: ", m1s/xd,", min. 2: ", m2s/xd, ", min. 3: ", m3s/xd)
+        min1str = min1str + str(xd) + ", \t" + str("%f" % m1s) + ", \t"+ str(m1s/xd) + "\n"
+        min2str = min2str + str(xd) + ", \t" + str("%f" % m2s) + ", \t"+ str(m2s/xd) + "\n"
+        min3str = min3str + str(xd) + ", \t" + str("%f" % m3s) + ", \t"+ str(m3s/xd) + "\n"
+# Alles ausgeben
+print(min1str, min2str, min3str)
